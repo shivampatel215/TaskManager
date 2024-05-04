@@ -170,6 +170,6 @@ The frontend directory contains the React Application and follows a modular and 
       - `TaskDetailsModal`: Represents the task details view, showing detailed infromation about a specific task. When a user clicks on a given task item, it will open up a modal to show a more detailed view with a unique route for that task. If they close the modal it takes them back to '/' where they can see all of their tasks again.
 
 Additional information related to decisions that were made and challenges faced can be found in the reflection here:
-[Reflection]('https://beryl-relation-603.notion.site/Task-Manager-Reflections-f7f16dcbe2da4142984bf2c030d5e92f')
+[Reflection](https://beryl-relation-603.notion.site/Task-Manager-Reflections-f7f16dcbe2da4142984bf2c030d5e92f)
 
 ## Additional Information
