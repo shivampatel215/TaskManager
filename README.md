@@ -101,6 +101,12 @@ To run Rspec tests (located in the `spec` directory), use the following command:
 bundle exec rspec
 ```
 
+#### GraphIQL
+
+You can access the graphiql playground here once the server is running:
+
+(http:localhost:3001/graphiql)
+
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
