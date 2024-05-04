@@ -1,0 +1,42 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin checkbox-styles {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover:after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &:checked {
+    border-color: $primary-color;
+
+    &:after {
+      background: $primary-color;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}

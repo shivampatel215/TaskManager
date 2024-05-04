@@ -1,0 +1,73 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+.item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-color;
+  width: 100%;
+  padding: 6px 0;
+  &:hover .icons {
+    display: flex;
+  }
+}
+
+.checkbox_with_title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.icons_with_date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkbox {
+  @include checkbox-styles;
+}
+
+.icons {
+  display: none;
+  gap: 6px;
+  align-items: center;
+}
+
+.icon {
+  width: 17px;
+  height: 17px;
+  &:hover {
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  .title,
+  .description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+  }
+  .title {
+    font-size: $font-size-base;
+    color: $text-color;
+  }
+
+  .description {
+    font-size: $font-size-small;
+    color: $text-color-secondary;
+  }
+}
+
+.date {
+  font-size: $font-size-small;
+  color: $text-color-secondary;
+}

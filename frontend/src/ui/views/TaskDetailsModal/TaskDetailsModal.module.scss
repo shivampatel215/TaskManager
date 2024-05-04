@@ -1,0 +1,92 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include flex-center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+  width: 800px;
+  min-height: 300px;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid $border-color;
+}
+.close_button {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  &:hover {
+    background-color: $background-color;
+  }
+  @include flex-center;
+
+  padding: 0;
+}
+.crossIcon {
+  width: 18px;
+  height: 18px;
+  color: $text-color;
+}
+.task_details_container {
+  padding-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  overflow-y: auto;
+  .title {
+    font-size: $font-size-large;
+    font-weight: 600;
+  }
+  .description {
+    font-weight: 400;
+    font-size: $font-size-base - 1;
+    padding-left: 45px;
+    word-wrap: break-word;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.check_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.date {
+  background-color: #fde7d8;
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.checkbox {
+  @include checkbox-styles;
+}
