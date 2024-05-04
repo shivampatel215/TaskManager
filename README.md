@@ -32,7 +32,7 @@ This is a simple task management application built with Rails 7, GraphQL, React,
 
 - Ruby [3.2.4]
 
-- Node.js [version]
+- Node.js (latest version)
 - PostgreSQL [9.3^] (https://www.postgresql.org/docs/current/tutorial-install.html)
 - React [18.2^]
 
